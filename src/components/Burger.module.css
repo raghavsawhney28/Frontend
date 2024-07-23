@@ -1,0 +1,42 @@
+.burger {
+  display: flex;
+  width: 313px;
+  justify-content: unset;
+  height: 63.5vh;
+  background-color: rgb(27, 31, 37);
+  position: absolute;
+  top: 70px;
+  /* opacity: 0; */
+  /* overflow-y: scroll; */
+  /* background-image: url(search.png); */
+}
+
+.show {
+  opacity: 1;
+  transition: opacity 1s;
+}
+.search{
+  height: 40px;
+  width: 90%;
+  position: absolute;
+  left: 5%;
+  top: 2%;
+  background: #4d4d4d94;
+  border-radius: 20px;
+}
+.searchBar {
+  height: 37px;
+  width: 72%;
+  position: absolute;
+  left: 14%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+}
+@media (max-width: 800px) {
+  .burger {
+    overflow-y: scroll;
+    left: 0px;
+  }
+}
